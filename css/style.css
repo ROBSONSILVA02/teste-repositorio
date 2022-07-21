@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+}
+
+.container{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.clear{clear: both;}
+
+/*header do meu site*/
+
+header{
+    background-image: url('../images/bg.jpg');
+    min-height: 450px;
+    padding: 30px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    position: relative;
+    z-index: 2;
+    background-image: url('../images/logo.png');
+    background-size: 100% 100%;
+    float: left;
+    width: 132px;
+    height: 20px;
+}
+
+.desktop{
+    float: right;
+}
+
+nav.desktop ul{
+    list-style-type: none;
+}
+
+nav.desktop li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav.desktop a{
+    color: white;
+    text-decoration: none;
+}
+
+nav.desktop .btn-nav{
+    padding: 3px 8px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+nav.mobile{
+    display: none;
+    float: right;
+}
+
+nav.mobile h3{
+    position: relative;
+    z-index: 2;
+    color: white;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+nav.mobile ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 70px 0 30px;
+    background: #31475e;
+    display: none;
+    text-align: center;
+}
+
+nav.mobile li{
+    padding: 10px 0;
+}
+
+nav.mobile a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+nav.mobile .btn-nav{
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 4px 10px;
+}
+
+
+.chamada-header{
+    padding: 110px 0;
+}
+
+.chamada-header h2{
+    font-size: 47px;
+    color: white;
+    font-weight: normal;
+}
+
+.chamada-header p{
+    font-size: 17px;
+    color: white;
+    margin-top: 10px;
+}
+
+.chamada-header form{
+    margin-top: 10px;
+}
+
+.chamada-header input[type=email]{
+    display: inline-block;
+    border-radius: 20px;
+    background: white;
+    width: 273px;
+    height: 35px;
+    border: 0;
+    padding-left: 10px;
+}
+
+.chamada-header input[type=email]:focus{
+    outline: none;
+}
+
+.chamada-header input[type=submit]{
+    width: 181px;
+    height: 43px;
+    border-radius: 100px;
+    background-color: #ff5f27;
+    color: white;
+    cursor: pointer;
+    border: 0;
+}
+
+/*descriçao*/
+
+section.descricao-danki{
+    text-align: center;
+    padding: 30px 0;
+}
+
+section.descricao-danki p{
+    display: inline-block;
+    max-width: 680px;
+    font-weight: lighter;
+    font-size: 22px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 1024px){
+
+    nav.desktop{
+        display: none;
+    }
+
+    nav.mobile{
+        display: block;
+    }
+
+    .chamada-header{
+        text-align: center;
+    }
+
+    .chamada-header p{
+        display: inline-block;
+    }
+
+    .chamada-header input[type=email]{
+        margin-bottom: 10px;
+    }
+}

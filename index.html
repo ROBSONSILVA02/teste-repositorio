@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="projeto-10">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>projeto 10</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu-topo">
+                <div class="logo"></div>
+                    <nav class="desktop">
+                        <ul>
+                            <li><a href="">sobre</a></li>
+                            <li><a href="">serviços</a></li>
+                            <li><a href="">contato</a></li>
+                            <li class="btn-nav"><a href="">quero um orçamento</a></li>
+                        </ul>
+                    </nav><!--desktop-->
+                    <nav class="mobile">
+                        <h3><i class="fa fa-bars"></i></h3>
+                        <ul>
+                            <li><a href="">sobre</a></li>
+                            <li><a href="">serviços</a></li>
+                            <li><a href="">contato</a></li>
+                            <li class="btn-nav"><a href="">quero um orçamento</a></li>
+                        </ul>
+                    </nav><!--mobile-->
+                <div class="clear"></div>
+            </div><!--menu-topo-->
+            <section class="chamada-header">
+                <h2>você vendendo mais<br />com automação web.</h2>
+                <p>nós criamos soluções de marketing para<br />sua empresa vender mais, da malhor forma</p>
+                <form class="redondo">
+                    <input type="email" name="email" required="" placeholder="seu e-mail...">
+                    <input type="submit" name="acao" value="quero sabe mais!">
+                </form>
+            </section><!--chamada-heade-->
+        </div><!--container-->
+    </header>
+
+    <section class="descricao-danki">
+        <div class="container">
+            <p>com anos de experiencia em desenvolvimento web e automação de 
+            marketing, a <b>dankicode</b> traz solições que ajudam o seu time a vender 
+            mais tanto em segmentos B2C quanto em B2B.</p>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('nav.mobile h3').click(function(){
+            $('nav.mobile').find('ul').slideToggle();
+        })
+    </script>
+</body>
+</html>
